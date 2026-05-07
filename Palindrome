@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int a, rev = 0;
+
+        System.out.println("Give me a number sequence:");
+        a=s.nextInt();
+
+        int original=a;
+
+        while (a!= 0){
+            int digit=a%10;
+            rev=rev*10+digit;
+            a=a/10;
+        }
+        System.out.println("Reversed Number is: "+rev);
+        if (original==rev){
+            System.out.println(original+"is a palindrome");
+        } else {
+            System.out.println(original+"is not a palindrome");
+        }
+    }
+}
