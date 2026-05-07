@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a,b,c,d;
+        
+        System.out.println("Enter the value 1:");
+        a=s.nextInt();
+        
+        System.out.println("Enter the value 2:");
+        b=s.nextInt();
+        
+        c=a%b;
+        d=a/b;
+        System.out.println("The remainder is:" +c);
+        System.out.println("The quotient is:" +d);
+        
+    }
+}
