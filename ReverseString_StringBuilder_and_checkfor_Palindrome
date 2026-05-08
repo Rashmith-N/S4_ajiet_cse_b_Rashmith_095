@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[]args) {
+      String text="BUS";
+      StringBuilder sb=new StringBuilder(text);
+      sb.reverse();
+      System.out.println(sb.toString());
+      String txt=sb.toString();
+      if(text==txt){
+        System.out.println("Palindrome");
+        }
+        else{
+          System.out.println("Not Palindrome");
+        }
+    }
+}
